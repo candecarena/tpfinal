@@ -2,3 +2,21 @@
     border: none;
     box-shadow: none;
 }
+h1 {
+    font-family: "Unbounded", serif;
+}
+h3 {
+    font-family: "Unbounded", serif;
+    font-size: large;
+}
+h4 {
+    font-family: "Unbounded", serif;
+    font-size: small;
+}
+.centrado {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
