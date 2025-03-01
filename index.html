@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Museo Digital de Arte Nacional</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="venobox/dist/venobox.min.css" type="text/css" media="screen" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
@@ -60,50 +59,86 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">HOME</a>
+                <a class="nav-link" aria-current="page" href="index.html">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTO</a>
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CREADORA</a>
+                <a class="nav-link" href="creadora.html">CREADORA</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   ARTISTAS
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="artistas/benitoquinquelamartin.html">Benito Quinquela Martín</a></li>
+                  <li><a class="dropdown-item" href="artistas/emiliabartole.html">Emilia Bartolé</a></li>
+                  <li><a class="dropdown-item" href="artistas/index.html">Raquel Forner</a></li>
+                  <li><a class="dropdown-item" href="artistas/julioleparc.html">Julio Le Parc</a></li>
+                  <li><a class="dropdown-item" href="artistas/gachihasper.html">Gachi Hasper</a></li>
+                  <li><a class="dropdown-item" href="artistas/adrianvillarrojas.html">Adrián Villar Rojas</a></li>
+
                 </ul>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    <!--Encabezado-->
+  <!--Encabezado-->
     <header>
     <br>
     <br>
-    <h3 class="centrado">Galería de Arte Nacional</h3>
-    <h4 class="centrado">Divulgación de grandes artista nacionales para redescubrir.</h4>
+    <div class="container-md">     
+    <h3>Galería de Arte Nacional</h3>
+    <h4>Selección de grandes artista nacionales para redescubrir.</h4>
     </header>
     <br>
-    <!--informacion-->
-    <section>
-        <p class="centrado"> Esta página recopila la obra de seis artistas nacionales con el fin de dar a conocer la variedad en materia de arte en nuestro país. los y las artistas que destaqué son: <b>Raquel Forner, Benito Quinquela Martín, Julio Le Parc, Gachi Hasper, Emilia Bartolé, Adrian Villar Rojas.</b> Junto a sus imagenes, se despliega informacón necesaria para conocer más sobre la vida de estos artistas o disfrutarlos en caso de ya conocerlos. <b></p>
-
-    <!--galeria-->
-    <a class="my-image-links" data-gall="myGallery01" href="img/"><img src="img/" alt="" /></a>
-    <a class="my-image-links" data-gall="myGallery01" href="img/"><img src="img/" alt="" /></a>
-    <a class="my-image-links" data-gall="myGallery01" href="img/"><img src="img/" alt="" /></a>
-    <a class="my-image-links" data-gall="myGallery01" href="img/"><img src="img/" alt="" /></a>
-    <a class="my-image-links" data-gall="myGallery01" href="img/"><img src="img/" alt="" /></a>
-    <a class="my-image-links" data-gall="myGallery01" href="img/"><img src="img/" alt="" /></a>
+  <!--informacion-->
+    <section class="container-md">
+        <p> Esta página recopila la obra de seis artistas nacionales con el fin de dar a conocer la variedad en materia de arte en nuestro país. los y las artistas que destaqué son: <b>Raquel Forner, Benito Quinquela Martín, Julio Le Parc, Gachi Hasper, Emilia Bartolé, Adrian Villar Rojas.</b> Junto a sus imagenes, se despliega informacón necesaria para conocer más sobre la vida de estos artistas o disfrutarlos en caso de ya conocerlos. <b></p>
+    </div>
+    
+  <!-- Sección de galería y tarjeta -->
+ 
+  <!--galeria-->
+  <div class="img-gallery">
+    <a href="artistas/benitoquinquelamartin.html">
+      <img src="img/fuegoenelcieloquinquelamartin.jpg" class="img-fluid rounded" alt="barco hundido de Quinquela Martin" /></a>
+    </a>
+    <a href="artistas/emiliabartole.html">
+    <img src="img/emiliabartoleretrato.jpg" class="img-fluid rounded" alt="Publico con cantante de Ice Delivery" /></a>
+    </a>
+    <a href="artistas/index.html">
+    <img src="img/tinieblasforner.jpg" class="img-fluid rounded" alt="Bajista de Ice Delivery" /></a>
+    </a>
+    <a href="artistas/julioleparc.html">
+    <img src="img/leparcblancoynegro.jpg" class="img-fluid rounded" alt="Guitarrista de Delfondo Disfrazado" /></a>
+    </a>
+    <a href="artistas/gachihasper.html">
+    <img src="img/coloresgachihasper.jpg" class="img-fluid rounded" alt="Integrantes de Tangre" /></a>
+    </a>
+    <a href="artistas/adrianvillarrojas.html">
+    <img src="img/esculturasporvillarrojas.jpg" class="img-fluid rounded" alt="Cantante de Los Hijos del Gordo" /></a>
+    </a>
     </section>
 
+    <!-- Tarjeta -->
+      <div class="col-md-9">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+</div>
+
   
+
       <!--paginacion-->
       <br>
       <nav aria-label="Page navigation example" data-bs-theme="dark">
@@ -126,11 +161,14 @@
 
 
 <!--finalllll-->
-      <script type="text/javascript" src="venobox/dist/venobox.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       <!--popper-->
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+      <!--com estos funciona el menu desplegable-->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
       <script src="js/archivo.js"></script>
     </div>  
   </body>
