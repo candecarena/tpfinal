@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galería Gachi Hasper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <div class="container-fluid">
+
+    <!--Menú de navegación-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../../index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../trivia.html">TRIVIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../creadora.html">CREADORA</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ARTISTAS
+                </a>
+                <!--ver si sali bienn de las carpetas-->
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/artistas/benitoquinquelamartin.html">Benito Quinquela Martín</a></li>
+                  <li><a class="dropdown-item" href="/artistas/emiliabertole.html">Emilia Bertolé</a></li>
+                  <li><a class="dropdown-item" href="/artistas/index.html">Raquel Forner</a></li>
+                  <li><a class="dropdown-item" href="/artistas/julioleparc.html">Julio Le Parc</a></li>
+                  <li><a class="dropdown-item" href="/artistas/gachihasper.html">Gachi Hasper</a></li>
+                  <li><a class="dropdown-item" href="/artistas/adrianvillarrojas.html">Adrián Villar Rojas</a></li>
+
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <!-- Encabezado -->
+<header>
+  
+</header>
+
+<!--para ampliar imagenes de la galeria-->
+<div class="full-img" id="fullImgBox">
+    <img src="../img/quinquelamartinaplenosol.jpg" id="fullImg" alt="">
+    <span onclick="closeImg()">x</span>
+</div>
+
+<!--galeria-->
+<div class="img-gallery">
+  <div class="text-center">
+     <img src="../../img/hasper/sintitulo1997.jpg" onclick="openFullImg(this.src)" class="img-fluid rounded" alt="Alchimie #207, 1992" /></a>
+     <br>
+     <p>Sin título, 1997</p>
+    </div>
+    <div class="text-center">
+     <img src="../../img/hasper/sintitulo1999.jpg" onclick="openFullImg(this.src)" class="img-fluid rounded" alt="Modulation 48, 1976" /></a>
+     <br>
+     <p>Sin título, 1999</p>
+    </div>
+    <div class="text-center">
+     <img src="../../img/hasper/sintitulo2017.jpg" onclick="openFullImg(this.src)" class="img-fluid rounded" alt="Composition Cinétique, 1970" /></a>
+     <br>
+     <p>Sin título, Cerámica, 2017</p>
+    </div>
+    <div class="text-center">
+     <img src="../../img/hasper/sintitulo2018.jpg" onclick="openFullImg(this.src)" class="img-fluid rounded" alt="Continuel Mobile Lumiere, 1968" /></a>
+     <br>
+     <p>Sin título, 2018</p>
+    </div>
+    <div class="text-center">
+        <img src="../../img/hasper/sintituloceramica2018.jpg" onclick="openFullImg(this.src)" class="img-fluid rounded" alt="Ondes 134, Serie 3, 1973" /></a>
+        <br>
+        <p>Sin título, Cerámica, 2018</p>
+    </div>
+    <div class="text-center">
+        <img src="../../img/hasper/sintituloceramicanaranja2018.jpg" onclick="openFullImg(this.src)" class="img-fluid rounded" alt="Relief #15, 1970" /></a>
+        <br>
+        <p>Sin título, Cerámica, 2018</p>
+    </div>
+  </section>
+
+    <hr>
+    <!--footer-->    
+    <footer>
+        <address>Para contactarse con nosotras escribir a <a href="contacto/index.html">este link</a></address>
+    </footer>
+
+
+<!--finalllll-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <!--popper-->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+      <!--com estos funciona el menu desplegable-->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+      <script src="../../js/archivo.js"></script>
+    </div>  
+  </body>
+</html>

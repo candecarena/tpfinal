@@ -13,6 +13,10 @@ h4 {
     font-family: "Unbounded", serif;
     font-size: small;
 }
+p {
+    font-family: "Sarabun", sans-serif;
+    font-size: medium;
+}
 .centrado {
     text-align: center;
     margin-left: 100px;
@@ -61,7 +65,34 @@ h4 {
     width: 90%;
     max-width: 500px;
 }
-.imagen-benito {
+.imagen-retrato {
     max-width: 200px;
     height: auto;
 }
+/*boton de la galeria de benito*/
+.btn-sm-custom {
+    padding: 0.2rem 0.4rem; /* Ajusta el espacio interno */
+    height: 1.5rem; /* Ajusta la altura */
+    line-height: 1rem; /* Centra el texto dentro del botón */
+}
+
+/*prueba css de las imagenes con texto*/
+.container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  #text {
+    margin-left: 20px;
+    display: none; /* Ocultar el texto inicialmente */
+    font-size: 16px;
+    color: #333;
+  }
+  
+  img {
+    cursor: pointer;
+    width: 150px;
+    height: auto;
+  }
+  

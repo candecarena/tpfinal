@@ -7,6 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -49,6 +53,9 @@
                 <a class="nav-link" href="../contacto.html">CONTACTO</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="../trivia.html">TRIVIA</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="../creadora.html">CREADORA</a>
               </li>
               <li class="nav-item dropdown">
@@ -58,7 +65,7 @@
                 <!--ver si sali bienn de las carpetas-->
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="../artistas/benitoquinquelamartin.html">Benito Quinquela Martín</a></li>
-                  <li><a class="dropdown-item" href="../artistas/emiliabartole.html">Emilia Bartolé</a></li>
+                  <li><a class="dropdown-item" href="../artistas/emiliabartole.html">Emilia Bertolé</a></li>
                   <li><a class="dropdown-item" href="../artistas/index.html">Raquel Forner</a></li>
                   <li><a class="dropdown-item" href="../artistas/julioleparc.html">Julio Le Parc</a></li>
                   <li><a class="dropdown-item" href="../artistas/gachihasper.html">Gachi Hasper</a></li>
@@ -75,44 +82,33 @@
     <br><br>
     <div class="container-md d-flex align-items-center">
         <!-- Imagen -->
-        <img src="../img/benitoquinquelamartinretrato.jpg" class="img-thumbnail me-4 imagen-benito" alt="Benito Quinquela Martín">
+        <img src="../img/quinquelamartin/benitoquinquelamartinretrato.jpg" class="img-thumbnail me-4 imagen-retrato" alt="Benito Quinquela Martín">
         
         <!-- Título y descripción -->
         <div>
             <h3>Benito Quinquela Martín</h3>
             <p>Benito Quinquela Martín (1890-1977) fue un destacado pintor argentino, conocido por su representación del puerto de Buenos Aires y la vida de los trabajadores portuarios. Nacido en el barrio de La Boca, su obra se caracteriza por el uso de colores vibrantes y una visión realista de la vida urbana, especialmente en el contexto industrial. Quinquela Martín capturó la esencia del puerto y sus habitantes, convirtiéndose en un referente del arte argentino. Su estilo y sus obras reflejan una profunda conexión con su entorno, fusionando la realidad social y el arte de manera única. Además, fue un gran defensor del arte popular y trabajó para que el arte fuera accesible a todos los sectores de la sociedad.</p>
+            <p>El estilo de Quinquela Martín es difícil de encasillar en un movimiento artístico concreto, ya que logró fusionar elementos del realismo y el expresionismo con un uso único del color. Sus cuadros se caracterizan por pinceladas fuertes, colores vibrantes y un enfoque emocional que transmitía la vitalidad y el esfuerzo de la vida portuaria. A través de su obra, supo capturar la esencia de los trabajadores, los barcos, las grúas y el humo que envolvía el puerto de Buenos Aires, reflejando tanto su movimiento constante como la dureza de la vida laboral en el lugar.</p>
         </div>
     </div>
 </header>
 
 <!--para ampliar imagenes de la galeria-->
 <div class="full-img" id="fullImgBox">
-    <img src="../img/quinquelamartinaplenosol.jpg" id="fullImg" alt="">
+    <img src="../img/quinquelamartinaplenosol.jpg" id="fullImg" alt="...">
     <span onclick="closeImg()">x</span>
 </div>
-
-  <!--galeria-->
-  <div class="img-gallery">
-    <img src="../img/quinquelamartinaplenosol.jpg" onclick="openFullImg(this.src)" class="img-fluid rounded" alt="Bajista de Ice Delivery" /></a>
-    <img src="../img/quinquelamartinfogatadesanjuan.jpg" onclick="openFullImg(this.src)" class="img-fluid rounded" alt="Guitarrista de Delfondo Disfrazado" /></a>
-    <img src="../img/quinquelamartindesembarquedelocomotoras.jpg" onclick="openFullImg(this.src)" class="img-fluid rounded" alt="Integrantes de Tangre" /></a>
-    <img src="../img/quinquelamartinlosdosamigos.jpg" onclick="openFullImg(this.src)" class="img-fluid rounded" alt="Cantante de Los Hijos del Gordo" /></a>
-    </section>
-
+<br>
+<hr>
     <!-- Tarjeta -->
-      <div class="col-md-9">
-          <div class="card">
-              <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="galerias/quinquelamartin.html" class="btn btn-primary">Ver galería</a>
-              </div>
-          </div>
-      </div>
+  <div class="d-flex position-relative">
+    <img src="../img/quinquelamartin/desembarquedelocomotoras.jpg" width="150" height="100" class="flex-shrink-0 me-3" alt="Desembarque de Locomotoras">
+    <div>
+      <h5 class="mt-0">¿Sabías qué..?</h5>
+      <p>Benito Quinquela Martín comenzó a pintar activamente en la década de <b>1910</b> y continuó produciendo obras hasta su muerte en <b>1977</b>.</p>
+      <a href="galerias/quinquelamartin.html" class="stretched-link">Ver obras</a>
+    </div>
   </div>
-</section>
-</div>
-
   
 
       <!--paginacion-->
@@ -126,15 +122,12 @@
               <li class="page-item"><a class="page-link" href="bandas/index.html">5</a></li>
             </ul>
         </nav>
-        <hr>
     <br>
-
     <hr>
     <!--footer-->    
     <footer>
         <address>Para contactarse con nosotras escribir a <a href="contacto/index.html">este link</a></address>
     </footer>
-
 
 <!--finalllll-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
