@@ -36,6 +36,7 @@ p {
     cursor: pointer;
     transition: 1s;
 }
+
 .img-gallery img:hover {
     transform: scale(1.05);
 }
@@ -95,4 +96,5 @@ p {
     width: 150px;
     height: auto;
   }
-  
+
+ 
