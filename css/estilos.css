@@ -67,9 +67,10 @@ p {
     max-width: 500px;
 }
 .imagen-retrato {
-    max-width: 200px;
-    height: auto;
+    max-width: 200px; /* Mantén el límite en 200px */
+    height: auto; /* Mantén la proporción */
 }
+
 /*boton de la galeria de benito*/
 .btn-sm-custom {
     padding: 0.2rem 0.4rem; /* Ajusta el espacio interno */
@@ -83,7 +84,7 @@ p {
     align-items: center;
     margin: 20px;
   }
-  
+
   #text {
     margin-left: 20px;
     display: none; /* Ocultar el texto inicialmente */
