@@ -59,7 +59,7 @@
      <section class="container-md">
         <article>
          <h3>Reglas del juego</h3>
-         <p>Tenés que responder las siguientes cinco preguntas en 30 segundos o menos!.<br>Cuando termines, presioná el botón enviar para enterarte cuántas acertaste y cuántas no.<br>¡Suerte!</p>
+         <p>Tenés que responder las siguientes cinco preguntas en 1 minuto o menos!<br>Cuando termines, presioná el botón enviar para enterarte cuántas acertaste y cuántas no.<br>¡Suerte!</p>
         </article>
           <button type="button" id="inicioJuego" class="btn btn-outline-danger">Iniciar juego</button>
         </div>
@@ -130,21 +130,38 @@
                     </fieldset>
     
                     <!--pregunta 4-->
-                    <fieldset>
-                        <legend>Pregunta 4</legend>
-                        <section>
-                            <label for="pregunta4">¿A quién pertenece esta obra?</label><br><br>
-                                <label class="opcion">
-                                    <input type="radio" id="pregunta4_opcion1" name="pregunta4" value="Graciela Hasper"> Graciela Hasper.
-                                </label>
-                                <label class="opcion">
-                                    <input type="radio" id="pregunta4_opcion2" name="pregunta4" value="Julio Le Parc"> Julio Le Parc.
-                                </label>
-                                <label class="opcion">
-                                    <input type="radio" id="pregunta4_opcion3" name="pregunta4" value="Raquel Forner"> Raquel Forner.
-                                </label>
-                        </section>
-                    </fieldset>
+                    <!-- Pregunta con botón para ver la imagen -->
+                    <legend>Pregunta 4</legend>
+                    <section>
+                            
+                    <label for="pregunta4">¿A quién pertenece <span id="verObra" style="color: rgb(85, 89, 219); cursor: pointer;" data-bs-toggle="modal" data-bs-target="#obraModal">esta obra</span>?</label><br><br>
+
+                    <!-- Modal de Bootstrap -->
+                   <div class="modal fade" id="obraModal" tabindex="-1" aria-labelledby="obraModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                         <div class="modal-header">
+                      <h5 class="modal-title" id="obraModalLabel"></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                    <div class="modal-body text-center">
+                        <img src="/artistas/gachihasper/img/coloresgachihasper.jpg" alt="Obra de arte" class="img-fluid">
+                    </div>
+                    </div>
+                   </div>
+                  </div>
+                  <label class="opcion">
+                    <input type="radio" id="pregunta4_opcion1" name="pregunta4" value="Graciela Hasper"> Graciela Hasper.
+                </label>
+                <label class="opcion">
+                    <input type="radio" id="pregunta4_opcion2" name="pregunta4" value="Julio Le Parc"> Julio Le Parc.
+                </label>
+                <label class="opcion">
+                    <input type="radio" id="pregunta4_opcion3" name="pregunta4" value="Raquel Forner"> Raquel Forner.
+                </label>
+        </section>
+    </fieldset>
+
     
                     <!--pregunta 5-->
                     <fieldset>
@@ -176,6 +193,8 @@
                 <address>Para contactarse con la creadora presione <a href="creadora.html">este link</a></address>
             </footer>
         </div>
+        <!--bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <!--Libreria para el confeti-->
         <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
         <script src="js/juego.js"></script>

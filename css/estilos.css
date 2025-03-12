@@ -124,6 +124,12 @@ address {
     width: 30px; /* Ajusta el tamaño según lo necesites */
     height: auto; /* Mantiene la proporción del gif */
 }
+/*para agrandar obra de hasper*/
+#verObra:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+
 legend {
     font-family: "Unbounded", serif;
     font-size: large;

@@ -1,9 +1,12 @@
 // Temporizador
+let countdown; // Declarar la variable fuera de la función para un alcance global
+
+// Configuración del temporizador
 document.getElementById("inicioJuego").addEventListener("click", function () {
     document.getElementById("timer").style.display = "block";
 
-    let timeLeft = 30; // Tiempo en segundos
-    const countdown = setInterval(function () {
+    let timeLeft = 60; // Tiempo en segundos
+    countdown = setInterval(function () {
         document.getElementById("timeLeft").innerText = timeLeft;
         timeLeft--;
 
@@ -14,7 +17,13 @@ document.getElementById("inicioJuego").addEventListener("click", function () {
         }
     }, 1000);
 });
-//confeti
+
+// Detener el temporizador al enviar respuestas
+document.getElementById("enviar").addEventListener("click", function(event) {
+    clearInterval(countdown); // Detiene el temporizador
+});
+
+// Confeti
 function lanzarConfeti() {
     confetti({
         particleCount: 150,
@@ -23,20 +32,11 @@ function lanzarConfeti() {
     });
 }
 
-// Llama a esta función cuando el jugador complete todas las preguntas
-document.getElementById("enviar").addEventListener("click", function (event) {
-    event.preventDefault(); // Evita el envío del formulario
-    lanzarConfeti();
-    //alert("¡Felicidades! Has terminado el juego.");
-});
-
-
 let jugadores = [
-    { nombre: 'Jugador', puntaje: 0 },
-    { nombre: 'PC', puntaje: 0 }
+    { nombre: 'Jugador', puntaje: 0 }
 ];
 
-// objeto respuestas correctas
+// Objeto de respuestas correctas
 const respuestasCorrectas = {
     "pregunta1": "Raquel Forner",
     "pregunta2": "Mendoza",
@@ -45,19 +45,10 @@ const respuestasCorrectas = {
     "pregunta5": "1890"
 };
 
-// Cargar puntajes al iniciar la página
-function cargarPuntajes() {
-    const puntajesGuardados = localStorage.getItem('puntajes');
-    if (puntajesGuardados) {
-        jugadores = JSON.parse(puntajesGuardados);
-    }
-}
-cargarPuntajes();  // cargar puntajes al inicio
-
 // Ocultar tablero al iniciar
 document.getElementById("JuegoPreguntas").style.display = "none";
 
-// Mostrar tablero al hacer clic en el boton"
+// Mostrar tablero al hacer clic en el botón
 document.getElementById("inicioJuego").addEventListener("click", function () {
     document.getElementById("JuegoPreguntas").style.display = "block";
 });
@@ -66,33 +57,15 @@ document.getElementById("inicioJuego").addEventListener("click", function () {
 function actualizarPuntaje(ganador) {
     if (ganador === 'Jugador') {
         jugadores[0].puntaje += 10;  // suma 10 puntos al jugador
-    } else if (ganador === 'PC') {
-        jugadores[1].puntaje += 10;  // suma 10 puntos a la PC
-    }
+    };
     guardarPuntajes();
 }
 
 // Función para guardar los puntajes en localStorage
+// tiene uqe quedar
 function guardarPuntajes() {
     localStorage.setItem('puntajes', JSON.stringify(jugadores));
-}
-
-// Función para mostrar la tabla de posiciones
-function mostrarTablaPosiciones() {
-    let tablaBody = document.querySelector("#tablaPosiciones tbody");
-    tablaBody.innerHTML = '';  // Limpio la tabla antes de actualizarla
-
-    let puntajesGuardados = JSON.parse(localStorage.getItem('puntajes')) || [];
-    puntajesGuardados.forEach(jugador => {
-        let fila = `
-            <tr>
-                <td>${jugador.nombre}</td>
-                <td>${jugador.puntaje}</td>
-            </tr>
-        `;
-        tablaBody.innerHTML += fila;
-    });
-}
+};
 
 // Función que se ejecuta cuando se hace clic en "enviar"
 document.getElementById("enviar").addEventListener("click", function(event) {
@@ -121,20 +94,9 @@ document.getElementById("enviar").addEventListener("click", function(event) {
     // Mostrar resultados
     if (correctas === totalPreguntas) {
         resultado += `<br>¡Felicidades! Se nota que te gusta la historia del arte en nuestro país.`;
-    }
-    resultado += `<br>Respuestas correctas: ${correctas} de ${totalPreguntas}`;
-    document.getElementById('resultado').innerHTML = resultado;
-
-    // Actualizar el puntaje del jugador si responde bien a todas las preguntas
-    if (correctas === totalPreguntas) {
-        actualizarPuntaje('Jugador');
-    } else {
-        actualizarPuntaje('PC');
-    }
-
-    // Actualizar la tabla de posiciones después de calcular los puntajes
-    mostrarTablaPosiciones();
+        lanzarConfeti(); // Lanza el confeti solo si todas las respuestas son correctas
+        actualizarPuntaje('Jugador'); // Suma puntos al jugador
+    };
+    document.getElementById('resultado').innerHTML = resultado; 
 });
 
-// Mostrar la tabla de posiciones cuando se carga la página
-mostrarTablaPosiciones();
