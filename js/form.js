@@ -1,39 +1,42 @@
 const submitBtn = document.getElementById('submitBtn');
-const validate = (e) => {
-  e.preventDefault();
-  const nombre = document.getElementById('inputNombre');
-  const direccionEmail = document.getElementById('inputEmail');
-  const contraseña = document.getElementById('inputContraseña');
-  if (nombre.value === "") {
-    alert("Por favor completa tu nombre");
-    nombre.focus();
-    return false;
-  }
+  const formulario = document.getElementById('miFormulario');
 
-  if (direccionEmail.value === "") {
-    alert("Por favor completa la direccion de Email");
-    direccionEmail.focus();
-    return false;
-  }
+  const validate = (e) => {
+    e.preventDefault(); // Evita que se envíe el formulario hasta que pase la validación
 
-  if (!emailIsValid(direccionEmail.value)) {
-    alert("Por favor completa con una direccion de Email verdadera");
-    direccionEmail.focus();
-    return false;
-  }
+    const nombre = document.getElementById('inputNombre');
+    const direccionEmail = document.getElementById('inputEmail');
+    const contraseña = document.getElementById('inputContraseña');
 
-  if (contraseña.value === "") {
-    alert("Por favor completa con tu localidad");
-    contraseña.focus();
-    return false;
-  }
+    if (nombre.value.trim() === "") {
+      alert("Por favor completa tu nombre");
+      nombre.focus();
+      return false;
+    }
 
-  return true; // Can submit the form data to the server
-}
+    if (direccionEmail.value.trim() === "") {
+      alert("Por favor completa la dirección de Email");
+      direccionEmail.focus();
+      return false;
+    }
 
-const emailIsValid = email => {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
+    if (!emailIsValid(direccionEmail.value.trim())) {
+      alert("Por favor completa con una dirección de Email válida");
+      direccionEmail.focus();
+      return false;
+    }
 
-submitBtn.addEventListener('click', validate);
+    if (contraseña.value.trim() === "") {
+      alert("Por favor completa tu contraseña");
+      contraseña.focus();
+      return false;
+    }
 
+    formulario.submit(); // Envía el formulario si todo está correcto
+  };
+
+  const emailIsValid = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
+  submitBtn.addEventListener('click', validate);

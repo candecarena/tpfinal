@@ -16,7 +16,7 @@
  <!--menu de navegacion-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Museo Digital</a>
+            <a class="navbar-brand" href="index.html">Museo Digital de Arte Nacional</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -56,30 +56,31 @@
     
     <br>
 
-  <!--formulario-->
-  <section>
-    <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-6">
-          <label for="inputNombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="inputNombre"  required>
-        </div>
-        <div class="col-md-6">
-          <label for="inputEmail" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail" required>
-        </div>
-        <div class="col-12">
-          <label for="inputContraseña" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="inputContraseña" required>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-outline-danger" id="submitBtn">Enviar formulario</button>
-        </div>
-    </form>
-  </section>
+ <!-- Formulario con validación personalizada y envío -->
+<section>
+  <form id="miFormulario" class="row g-3" action="https://formsubmit.co/candelamariacarena@gmail.com" method="POST">
+    <div class="col-md-6">
+      <label for="inputNombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="inputNombre" name="nombre" required>
+    </div>
+    <div class="col-md-6">
+      <label for="inputEmail" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail" name="email" required>
+    </div>
+    <div class="col-12">
+      <label for="inputContraseña" class="form-label">Contraseña</label>
+      <input type="password" class="form-control" id="inputContraseña" name="contraseña" required>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-outline-danger" id="submitBtn">Enviar formulario</button>
+    </div>
+  </form>
+</section>
+  
 
     <hr>
     <!--footer-->    
-    <footer>
+    <footer class="text-center py-3 bg-light">
       <address>Para contactarse con la creadora presione <a href="creadora.html">este link</a></address>
     </footer>
 

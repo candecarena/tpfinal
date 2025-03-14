@@ -67,7 +67,7 @@ p {
     max-width: 500px;
 }
 .imagen-retrato {
-    max-width: 200px; /* Mantén el límite en 200px */
+    max-width: 100px; /* Mantén el límite en 200px */
     height: auto; /* Mantén la proporción */
 }
 
@@ -148,6 +148,11 @@ legend {
 .opcion:hover {
     background-color: rgb(106, 100, 96);
     color: #f9f9f9;
+}
+
+footer {
+     /*margin-top: auto; Empuja el footer hacia la parte inferior */
+    text-align: center;
 }
 
 

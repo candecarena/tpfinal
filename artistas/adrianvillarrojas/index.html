@@ -43,7 +43,7 @@
     <!--menu de navegacion-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-          <a class="navbar-brand" href="../../index.html">Museo Digital</a>
+          <a class="navbar-brand" href="../../index.html">Museo Digital de Arte Nacional</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
@@ -72,20 +72,26 @@
       </div>
   </nav>
 
-  <!-- Encabezado -->
-<header>
-  <br><br>
-  <div class="container-md d-flex align-items-center">
-  <!-- Imagen ,, pareciera ser que si le saco la clase imagen-retrato funciona igual... ver si la dejo o no.-->
-    <img src="img/retrato.jpg"  width="150" height="100" class="img-thumbnail me-4 imagen-retrato" alt="Adrian Villar Rojas">
-      
-  <!-- Título y descripción -->
-  <div>
-    <h3>Adrian Villar Rojas</h3>
-    <p>info</p>
-  </div>
-  </div>
-</header>
+  <!-- Encabezado  con grillas y columnas para acomodar-->
+  <header>
+    <div class="container-md py-4">
+      <div class="row align-items-center">
+        <!-- Imagen -->
+        <div class="col-12 col-md-4 text-center text-md-center mb-2 mb-md-0">
+          <img src="img/retrato.jpg" class="img-thumbnail imagen-retrato" alt="Adrian Villar Rojas" style="max-width: 150px; height: auto;">
+        </div>
+
+        <!-- Texto -->
+        <div class="col-12 col-md-7">
+          <h3>Adrian Villar Rojas</h3>
+          <p>Adrián Villar Rojas nació en Rosario, en el año 1980. Es un artista dedicado al arte contemporáneo. En su expresión ha ocupado recursos como escultura, especialmente la de gran formato y con materiales como la <b>arcilla, materia orgánica, residuos sólidos, cemento, dibujo, artesanía, música e instalación</b>, en los que son frecuentes alusiones al fin del mundo o el llamado Antropoceno (la era geológica en la que vivimos).</p>
+          <p>Se graduó en la Escuela de Bellas Artes de Rosario. Su carrera tuvo mayor notoriedad cuando ganó el certamen "Curriculum Cero" de la galería Ruth Benzacar de Buenos Aires, en 2003. En la exposición "Lo que el fuego me trajo", presentó una fusión de elementos antiguos y modernos. Desde entonces, ha expuesto en espacios públicos y privados de renombre internacional.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  
 
 <hr>
   <!-- Tarjeta -->
@@ -93,14 +99,14 @@
   <img src="img/planetario.webp" width="150" height="100" class="flex-shrink-0 me-3" alt="Obra de Villar Rojas">
   <div>
     <h5 class="mt-0">¿Sabías qué..?</h5>
-    <p>Texto sobre villar rojas.</p>
+    <p>La obra de Villar Rojas tiene distintas constantes tanto en los formatos, los materiales y la situación en la que son dispuestas sus obras, muchas de las cuales asemejan esculturas antiguas, dispuestas en medio de la nada, así como el uso y disposición de materiales baratos derivados de las ruinas y los escombros.</p>
     <a href="obras.html" class="stretched-link">Ver obras</a>
   </div>
 </div>
 
     <hr>
     <!--footer-->    
-    <footer>
+    <footer class="text-center py-3 bg-light">
       <address>Para contactarse con la creadora presione <a href="../../creadora.html">este link</a></address>
     </footer>
 
