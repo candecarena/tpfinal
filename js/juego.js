@@ -93,7 +93,7 @@ document.getElementById("enviar").addEventListener("click", function(event) {
 
     // Mostrar resultados
     if (correctas === totalPreguntas) {
-        resultado += `<br>¡Felicidades! Se nota que te gusta la historia del arte en nuestro país.`;
+        resultado += `<br>¡Felicidades! Se nota que te gusta el arte de en nuestro país.`;
         lanzarConfeti(); // Lanza el confeti solo si todas las respuestas son correctas
         actualizarPuntaje('Jugador'); // Suma puntos al jugador
     };

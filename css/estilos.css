@@ -152,6 +152,10 @@ legend {
 .negro {
     background-color: black;
 }
+.card-text {
+    font-size: small;
+    font-weight: lighter;
+}
 
 footer {
      /*margin-top: auto; Empuja el footer hacia la parte inferior */
