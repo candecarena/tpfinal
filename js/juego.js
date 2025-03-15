@@ -1,7 +1,7 @@
 // Temporizador
-let countdown; // Declarar la variable fuera de la función para un alcance global
+let countdown; // declaro la variable fuera de la función para un alcance global
 
-// Configuración del temporizador
+// config del temporizador
 document.getElementById("inicioJuego").addEventListener("click", function () {
     document.getElementById("timer").style.display = "block";
 
@@ -20,7 +20,7 @@ document.getElementById("inicioJuego").addEventListener("click", function () {
 
 // Detener el temporizador al enviar respuestas
 document.getElementById("enviar").addEventListener("click", function(event) {
-    clearInterval(countdown); // Detiene el temporizador
+    clearInterval(countdown); // acá detiene
 });
 
 // Confeti
@@ -62,7 +62,6 @@ function actualizarPuntaje(ganador) {
 }
 
 // Función para guardar los puntajes en localStorage
-// tiene uqe quedar
 function guardarPuntajes() {
     localStorage.setItem('puntajes', JSON.stringify(jugadores));
 };

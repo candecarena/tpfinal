@@ -62,8 +62,8 @@ p {
     max-width: 500px;
 }
 .imagen-retrato {
-    max-width: 100px; 
-    height: auto; 
+    max-width: 150px; 
+    height: auto;
 }
 
 /*boton de la galeria de benito*/
@@ -122,7 +122,8 @@ address {
 /*para agrandar obra de hasper, juego*/
 #verObra:hover {
     text-decoration: underline;
-    color: darkblue;
+    color: rgb(85, 89, 219);
+    cursor: pointer;
 }
 legend {
     font-family: "Unbounded", serif;

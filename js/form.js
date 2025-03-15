@@ -2,7 +2,7 @@ const submitBtn = document.getElementById('submitBtn');
   const formulario = document.getElementById('miFormulario');
 
   const validate = (e) => {
-    e.preventDefault(); // Evita que se envíe el formulario hasta que pase la validación
+    e.preventDefault(); // evita que se envíe el formulario hasta que pase la validación
 
     const nombre = document.getElementById('inputNombre');
     const direccionEmail = document.getElementById('inputEmail');
@@ -32,7 +32,7 @@ const submitBtn = document.getElementById('submitBtn');
       return false;
     }
 
-    formulario.submit(); // Envía el formulario si todo está correcto
+    formulario.submit(); // envía el formulario si todo está correcto
   };
 
   const emailIsValid = (email) => {
