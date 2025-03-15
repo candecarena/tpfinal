@@ -19,10 +19,6 @@ p {
 }
 .centrado {
     text-align: center;
-    /*margin-left: 100px;
-    margin-right: 100px;
-    padding-left: 100px;
-    padding-right: 100px;*/
 }
 .img-gallery {
     width: 80%;
@@ -36,7 +32,6 @@ p {
     cursor: pointer;
     transition: 1s;
 }
-
 .img-gallery img:hover {
     transform: scale(1.05);
 }
@@ -59,23 +54,23 @@ p {
     font-size: 30px;
     color: #fff;
     cursor: pointer;
-
 }
+
 /*como se ve la imagen agrandada*/
 .full-img img {
     width: 90%;
     max-width: 500px;
 }
 .imagen-retrato {
-    max-width: 100px; /* Mantén el límite en 200px */
-    height: auto; /* Mantén la proporción */
+    max-width: 100px; 
+    height: auto; 
 }
 
 /*boton de la galeria de benito*/
 .btn-sm-custom {
-    padding: 0.2rem 0.4rem; /* Ajusta el espacio interno */
-    height: 1.5rem; /* Ajusta la altura */
-    line-height: 1rem; /* Centra el texto dentro del botón */
+    padding: 0.2rem 0.4rem;
+    height: 1.5rem;
+    line-height: 1rem; /* centra el texto dentro del botón */
 }
 
 /*prueba css de las imagenes con texto*/
@@ -83,53 +78,52 @@ p {
     display: flex;
     align-items: center;
     margin: 20px;
-  }
-
-  #text {
+}
+#text {
     margin-left: 20px;
     display: none; /* Ocultar el texto inicialmente */
     font-size: 16px;
     color: #333;
-  }
-  
-  img {
+}
+img {
     cursor: pointer;
     width: 150px;
     height: auto;
-  }
+}
 address {
     text-align: center;
 }
 
- /* Centrar el tablero de preguntas */
+ /*centro el tablero de preguntas */
 #JuegoPreguntas {
-    display: none; /* Oculto por defecto */
-    margin: 0 auto; /* Centrado horizontalmente */
-    max-width: 80%; /* Limita el ancho del tablero */
-    background-color: #f8f9fa; /* Fondo claro para diferenciarlo */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: none; 
+    margin: 0 auto; 
+    max-width: 80%; 
+    background-color: #f8f9fa; 
+    padding: 20px; 
+    border-radius: 10px; /* bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /*sombra*/
     text-align: center;
 }
-/* Estilos del temporizador */
+
+/* temporizador */
 .timer {
-    display: none; /* Oculto inicialmente */
+    display: none;
     font-size: 20px;
-    color: rgb(219, 46, 46); /* Rojo */
+    color: rgb(219, 46, 46);
     text-align: center;
     margin-bottom: 20px;
 }
 #reloj {
-    width: 30px; /* Ajusta el tamaño según lo necesites */
-    height: auto; /* Mantiene la proporción del gif */
+    width: 30px;
+    height: auto; 
 }
-/*para agrandar obra de hasper*/
+
+/*para agrandar obra de hasper, juego*/
 #verObra:hover {
     text-decoration: underline;
     color: darkblue;
 }
-
 legend {
     font-family: "Unbounded", serif;
     font-size: large;
@@ -142,7 +136,7 @@ legend {
     padding: 8px; 
     margin-bottom: 10px; 
     border: 2px solid #8a796d; 
-    border-radius: 5px; /* bordes redondeados opcionales */
+    border-radius: 5px;
     background-color: #f9f9f9; 
 }
 .opcion:hover {
@@ -156,9 +150,7 @@ legend {
     font-size: small;
     font-weight: lighter;
 }
-
 footer {
-     /*margin-top: auto; Empuja el footer hacia la parte inferior */
     text-align: center;
 }
 
