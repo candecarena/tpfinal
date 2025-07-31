@@ -2,37 +2,45 @@
     border: none;
     box-shadow: none;
 }
+
 h1 {
     font-family: "Unbounded", serif;
 }
+
 h3 {
     font-family: "Unbounded", serif;
     font-size: large;
 }
-h4, h5 {
+
+h4,
+h5 {
     font-family: "Unbounded", serif;
     font-size: small;
 }
+
 p {
     font-family: "Tenor Sans", sans-serif;
     font-size: medium;
 }
+
 .centrado {
     text-align: center;
 }
+
 .img-gallery {
     width: 80%;
     margin: 50px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 30px;
 }
-/*prueba*/
+
 .img-gallery a {
     text-align: center;
     color: black;
     text-decoration: none;
 }
+
 .img-gallery p {
     margin-top: 5px;
     font-size: 14px;
@@ -43,29 +51,22 @@ p {
     cursor: pointer;
     transition: 1s;
 }
+
 .img-gallery img:hover {
     transform: scale(1.05);
 }
-.full-img {
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 99;
+
+/*para evitar que las img superen el limite de la pantalla*/
+.vbox-content img {
+    max-width: 90vw; 
+    max-height: 90vh; 
+    height: auto;
+    width: auto;
+    object-fit: contain;
 }
 
-/*como se ve la imagen agrandada */
-.full-img img {
-    width: 90%;
-    max-width: 500px;
-}
 .imagen-retrato {
-    max-width: 150px; 
+    max-width: 150px;
     height: auto;
 }
 
@@ -73,7 +74,7 @@ p {
 .btn-sm-custom {
     padding: 0.2rem 0.4rem;
     height: 1.5rem;
-    line-height: 1rem; /* centra el texto dentro del botón */
+    line-height: 1rem;
 }
 
 /*prueba css de las imagenes con texto*/
@@ -82,30 +83,36 @@ p {
     align-items: center;
     margin: 20px;
 }
+
 #text {
     margin-left: 20px;
-    display: none; /* Ocultar el texto inicialmente */
+    /* Ocultar el texto inicialmente */
+    display: none;
     font-size: 16px;
     color: #333;
 }
+
 .img-mini {
     cursor: pointer;
     width: 150px;
     height: auto;
 }
+
 address {
     text-align: center;
 }
 
- /*centro el tablero de preguntas */
+/*centro el tablero de preguntas */
 #JuegoPreguntas {
-    display: none; 
-    margin: 0 auto; 
-    max-width: 80%; 
-    background-color: #f8f9fa; 
-    padding: 20px; 
-    border-radius: 10px; /* bordes redondeados */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /*sombra*/
+    display: none;
+    margin: 0 auto;
+    max-width: 80%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    /* bordes redondeados */
+    border-radius: 10px;
+    /*sombra*/
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -117,9 +124,10 @@ address {
     text-align: center;
     margin-bottom: 20px;
 }
+
 #reloj {
     width: 30px;
-    height: auto; 
+    height: auto;
 }
 
 /*para agrandar obra de hasper, juego*/
@@ -128,6 +136,7 @@ address {
     color: rgb(85, 89, 219);
     cursor: pointer;
 }
+
 legend {
     font-family: "Unbounded", serif;
     font-size: large;
@@ -135,27 +144,30 @@ legend {
     padding: 3px;
     text-align: center;
 }
+
 .opcion {
-    display:inline-block;  /* cada opción en una línea */
-    padding: 8px; 
-    margin-bottom: 10px; 
-    border: 2px solid #8a796d; 
+    display: inline-block; /* cada opción en una línea */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #8a796d;
     border-radius: 5px;
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
 }
+
 .opcion:hover {
     background-color: rgb(106, 100, 96);
     color: #f9f9f9;
 }
+
 .negro {
     background-color: black;
 }
+
 .card-text {
     font-size: small;
     font-weight: lighter;
 }
+
 footer {
     text-align: center;
 }
-
-
