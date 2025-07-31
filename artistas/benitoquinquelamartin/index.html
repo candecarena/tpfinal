@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MdAN | Artistas - Benito Quinquela Martín</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
@@ -16,105 +18,137 @@
     <link rel="icon" href="../../img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/estilos.css">
 </head>
+
 <body>
     <div class="container-fluid">
-    <!--carrousel-->
-<div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="../../img/quinquelamartin.png" class="d-block w-100" alt="Banner hecho con obras de Benito Quinquela Martín">
-            <div class="carousel-caption d-none d-md-block">
-                <h1 class="text-start">Benito Quinquela Martín</h1>
+        <!--carrousel-->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../../img/quinquelamartin.png" class="d-block w-100"
+                        alt="Banner hecho con obras de Benito Quinquela Martín">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-start">Benito Quinquela Martín</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Los botones de navegación no son necesarios, pero los dejo por si decides agregar más imágenes -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--menu de navegacion-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html">Museo Digital de Arte Nacional</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">BENITO QUINQUELA MARTÍN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../emiliabertole/index.html">EMILIA BERTOLÉ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../raquelforner/index.html">RAQUEL FORNER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../julioleparc/index.html">JULIO LE PARC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../gachihasper/index.html">GACHI HASPER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../adrianvillarrojas/index.html">ADRIÁN VILLAR ROJAS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Encabezado -->
+        <header>
+            <div class="container-md py-4">
+                <div class="row align-items-center">
+                    <!-- Imagen -->
+                    <div class="col-12 col-md-4 text-center text-md-center mb-2 mb-md-0">
+                        <img src="img/benitoquinquelamartinretrato.jpg" class="img-thumbnail imagen-retrato"
+                            alt="Benito Quinquela Martin">
+                    </div>
+                    <!-- Título y descripción -->
+                    <div class="col-12 col-md-7">
+                        <h3>Benito Quinquela Martín</h3>
+                        <p>Nació en Buenos Aires el 1º de marzo de 1890, siendo su nombre de origen Benito Juan Martín.
+                            Abandonado al nacer por su madre en la Casa de Expósitos, donde vivió sus primeros años,
+                            pasó después a otros asilos y a la Casa Cuna hasta que a los seis años fue adoptado por la
+                            familia Chinchella que explotaba una modesta carbonería en La Boca. Cursó la escuela
+                            primaria hasta el tercer grado y tuvo que dejarla para colaborar con su padre en la
+                            carbonería. Por esta causa recién retomó su formación a los 14 años asistiendo a las clases
+                            de pintura que dictaba el pintor Alfredo Lázzari en la Sociedad Unión de La Boca. </p>
+                        <p>Ya para esa época Quinquela se había iniciado espontáneamente en el dibujo y con trozos de
+                            carbón sobre cartón o lienzo reproducía muchas de las escenas a las que asistía diariamente
+                            en el puerto. A los 20 años participó de una muestra colectiva de los alumnos de Lazzari y
+                            recién en 1918 tuvo su primera exposición individual en la galería Witcomb, de la calle
+                            Florida. A partir de allí no cesó de exponer sus obras.</p>
+                        <p>Participó del Salón Nacional, expuso en el Jockey Club, conoció a los pintores de la época
+                            como Lacámera, Victorica y Collivadino quien lo definió como “el pintor de La Boca”. Viajó
+                            por el país, visitó Río de Janeiro y Nueva York y en Europa se conectó con el ambiente
+                            cultural de la época, especialmente con Bourdelle y Marinetti. Realizó su última exposición
+                            individual en el Salón Dorado de la Municipalidad de La Plata y en 1972 fue designado
+                            Profesor Honorario de la Universidad de Buenos Aires.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <hr>
+        <!-- Tarjeta -->
+        <div class="d-flex position-relative">
+            <img src="img/desembarquedelocomotoras.jpg" width="150" height="100" class="flex-shrink-0 me-3"
+                alt="Desembarque de Locomotoras">
+            <div>
+                <h5 class="mt-0">¿Sabías qué..?</h5>
+                <p>Benito Quinquela Martín comenzó a pintar activamente en la década de <b>1910</b> y continuó
+                    produciendo obras hasta su muerte en <b>1977</b>.</p>
+                <a href="obras.html" class="stretched-link">Ver obras</a>
             </div>
         </div>
-    </div>
-    <!-- Los botones de navegación no son necesarios, pero los dejo por si decides agregar más imágenes -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
 
-  <!--menu de navegacion-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="../../index.html">Museo Digital de Arte Nacional</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">BENITO QUINQUELA MARTÍN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../emiliabertole/index.html">EMILIA BERTOLÉ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../raquelforner/index.html">RAQUEL FORNER</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../julioleparc/index.html">JULIO LE PARC</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="../gachihasper/index.html">GACHI HASPER</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="../adrianvillarrojas/index.html">ADRIÁN VILLAR ROJAS</a>
-              </li>                 
-            </ul>
-        </div>
-    </div>
-</nav>
+        <hr>
+        <!--footer-->
+        <footer class="text-center py-3 bg-light">
+            <address>Para contactarse con la creadora presione <a href="../../creadora.html">este link</a></address>
+        </footer>
 
-  <!-- Encabezado -->
-  <header>
-    <div class="container-md py-4">
-      <div class="row align-items-center">
-        <!-- Imagen -->
-        <div class="col-12 col-md-4 text-center text-md-center mb-2 mb-md-0">
-          <img src="img/benitoquinquelamartinretrato.jpg" class="img-thumbnail imagen-retrato" alt="Benito Quinquela Martin">
-        </div>
-        <!-- Título y descripción -->
-        <div class="col-12 col-md-7">
-            <h3>Benito Quinquela Martín</h3>
-            <p>Nació en Buenos Aires el 1º de marzo de 1890, siendo su nombre de origen Benito Juan Martín. Abandonado al nacer por su madre en la Casa de Expósitos, donde vivió sus primeros años, pasó después a otros asilos y a la Casa Cuna hasta que a los seis años fue adoptado por la familia Chinchella que explotaba una modesta carbonería en La Boca. Cursó la escuela primaria hasta el tercer grado y tuvo que dejarla para colaborar con su padre en la carbonería. Por esta causa recién retomó su formación a los 14 años asistiendo a las clases de pintura que dictaba el pintor Alfredo Lázzari en la Sociedad Unión de La Boca. </p>
-            <p>Ya para esa época Quinquela se había iniciado espontáneamente en el dibujo y con trozos de carbón sobre cartón o lienzo reproducía muchas de las escenas a las que asistía diariamente en el puerto. A los 20 años participó de una muestra colectiva de los alumnos de Lazzari y recién en 1918 tuvo su primera exposición individual en la galería Witcomb, de la calle Florida. A partir de allí no cesó de exponer sus obras.</p>
-            <p>Participó del Salón Nacional, expuso en el Jockey Club, conoció a los pintores de la época como Lacámera, Victorica y Collivadino quien lo definió como “el pintor de La Boca”. Viajó por el país, visitó Río de Janeiro y Nueva York y en Europa se conectó con el ambiente cultural de la época, especialmente con Bourdelle y Marinetti. Realizó su última exposición individual en el Salón Dorado de la Municipalidad de La Plata y en 1972 fue designado Profesor Honorario de la Universidad de Buenos Aires.</p>
-        </div>
+        <!--final-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <!--popper-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
     </div>
-  </div>
-</header>
+</body>
 
-<hr>
-    <!-- Tarjeta -->
-  <div class="d-flex position-relative">
-    <img src="img/desembarquedelocomotoras.jpg" width="150" height="100" class="flex-shrink-0 me-3" alt="Desembarque de Locomotoras">
-    <div>
-      <h5 class="mt-0">¿Sabías qué..?</h5>
-      <p>Benito Quinquela Martín comenzó a pintar activamente en la década de <b>1910</b> y continuó produciendo obras hasta su muerte en <b>1977</b>.</p>
-      <a href="obras.html" class="stretched-link">Ver obras</a>
-    </div>
-  </div>
- 
-    <hr>
-    <!--footer-->    
-    <footer class="text-center py-3 bg-light">
-        <address>Para contactarse con la creadora presione <a href="../../creadora.html">este link</a></address>
-    </footer>
-
-<!--final-->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <!--popper-->
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    </div>  
-  </body>
 </html>

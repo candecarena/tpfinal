@@ -34,9 +34,7 @@ const submitBtn = document.getElementById('submitBtn');
 
     formulario.submit(); // envía el formulario si todo está correcto
   };
-
   const emailIsValid = (email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   };
-
   submitBtn.addEventListener('click', validate);

@@ -1,138 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MdAN | Benito Quinquela Martín - Obras</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-    <!--favicon-->
-    <link rel="icon" href="../../img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../../css/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MdAN | Benito Quinquela Martín - Obras</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  <!--favicon-->
+  <link rel="icon" href="../../img/favicon.png" type="image/x-icon">
+  <!-- galeria venobox-->
+  <link rel="stylesheet" href="../../css/venobox.min.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="../../css/estilos.css">
 </head>
+
 <body>
-    <div class="container-fluid">
+  <div class="container-fluid">
 
     <!--menu de navegacion-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
         <a class="navbar-brand" href="../../index.html">Museo Digital de Arte Nacional</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">BENITO QUINQUELA MARTÍN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../emiliabertole/index.html">EMILIA BERTOLÉ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../raquelforner/index.html">RAQUEL FORNER</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../julioleparc/index.html">JULIO LE PARC</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="../gachihasper/index.html">GACHI HASPER</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="../adrianvillarrojas/index.html">ADRIÁN VILLAR ROJAS</a>
-              </li>                 
-            </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">BENITO QUINQUELA MARTÍN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../emiliabertole/index.html">EMILIA BERTOLÉ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../raquelforner/index.html">RAQUEL FORNER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../julioleparc/index.html">JULIO LE PARC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../gachihasper/index.html">GACHI HASPER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../adrianvillarrojas/index.html">ADRIÁN VILLAR ROJAS</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
-<br>
-  <!-- Encabezado -->
-<header>
-  <h5 class="centrado">Benito, el pintor de La Boca.</h5>
-</header>
-
-<!--para ampliar imagenes de la galeria-->
-<div class="full-img" id="fullImgBox">
-    <img src="../img/quinquelamartinaplenosol.jpg" id="fullImg" alt="">
-    <span onclick="closeImg()">x</span>
-</div>
-  <!--galeria-->
-<div class="img-gallery">
-    <div class="text-center">
-     <img src="img/efectodelsol.jpg" onclick="openFullImg(this.src)" class="img-fluid" alt="Efecto de Sol, 1949">
-     <br>
-     <p>Efecto de Sol, 1949</p>
-    </div>
-    <div class="text-center">
-     <img src="img/bateauxdepeche.jpg" onclick="openFullImg(this.src)" class="img-fluid" alt="Bateaux de pêche, 1963">
-     <br>
-     <p>Bateaux de pêche, 1963</p>
-    </div>
-    <div class="text-center">
-        <img src="img/fogatadesanjuan.jpg" onclick="openFullImg(this.src)" class="img-fluid" alt="Fogata de San Juan, 1940">
-        <br>
-        <p>Fogata de San Juan, 1940</p>
-    </div>
-    <div class="text-center">
-        <img src="img/mañanaimpresionista.jpg" onclick="openFullImg(this.src)" class="img-fluid" alt="Mañana Impresionista, 1929">
-        <br>
-        <p>Mañana Impresionista, 1929</p>
-    </div>
-    <div class="text-center">
-      <img src="img/crepusculo.jpg" onclick="openFullImg(this.src)" class="img-fluid" alt="Crepúsculo, 1960">
-      <br>
-      <p>Crepúsculo, 1960</p>
-  </div>
-  <div class="text-center">
-    <img src="img/diadeniebla.jpg" onclick="openFullImg(this.src)" class="img-fluid" alt="Día de niebla, 1957">
+      </div>
+    </nav>
     <br>
-    <p>Día de niebla, 1957</p>
-</div>
-<div class="text-center">
-  <img src="img/aplenosol.jpg" onclick="openFullImg(this.src)" class="img-fluid" alt="A Pleno Sol, 1944">
-  <br>
-  <p>A Pleno Sol, 1944</p>
- </div>
- <div class="text-center">
-  <img src="img/shipunderrepair.jpg" onclick="openFullImg(this.src)" class="img-fluid" alt="Ship under repair, 1930">
-  <br>
-  <p>Ship Under Repair, 1930</p>
- </div>
- <div class="text-center">
-  <img src="img/morningsunbuenosaires.jpg" onclick="openFullImg(this.src)" class="img-fluid" alt="Morning Sun, Buenos Aires, 1930">
-  <br>
-  <p>Morning Sun, Buenos Aires, 1930</p>
- </div>
- <div class="text-center">
-  <img src="img/workingathighpressure.jpg" onclick="openFullImg(this.src)" class="img-fluid" alt="working at high pressure, 1930">
-  <br>
-  <p>Working at High Pressure, 1930</p>
- </div>
- <div class="text-center">
-  <img src="img/rincondelriachuelo.jpg" onclick="openFullImg(this.src)" class="img-fluid" alt="Rincón del Riachuelo, 1918">
-  <br>
-  <p>Rincón del Riachuelo, 1918</p>
- </div>
- <div class="text-center">
-  <img src="img/elevadoresaplenosol.jpg" onclick="openFullImg(this.src)" class="img-fluid" alt="Elevadores A Pleno Sol, 1945">
-  <br>
-  <p>Elevadores A Pleno Sol, 1945</p>
- </div>
-</div>
+    
+    <!-- Encabezado -->
+    <header>
+      <h5 class="centrado">Benito, el pintor de La Boca.</h5>
+    </header>
 
+    <!--galeria-->
+    <div class="img-gallery">
+      <a class="my-image-links" data-gall="myGallery01" href="img/efectodelsol.jpg"><img src="img/efectodelsol.jpg"
+          alt="Efecto de Sol, 1949">
+        <p>Efecto de Sol, 1949</p>
+      </a>
+      <a class="my-image-links" data-gall="myGallery01" href="img/bateauxdepeche.jpg"><img src="img/bateauxdepeche.jpg"
+          alt="Bateaux de pêche, 1963">
+        <p>Bateaux de pêche, 1963</p>
+      </a>
+      <a class="my-image-links" data-gall="myGallery01" href="img/fogatadesanjuan.jpg"><img
+          src="img/fogatadesanjuan.jpg" alt="Fogata de San Juan, 1940">
+        <p>Fogata de San Juan, 1940</p>
+      </a>
+      <a class="my-image-links" data-gall="myGallery01" href="img/mañanaimpresionista.jpg"><img
+          src="img/mañanaimpresionista.jpg" alt="Mañana Impresionista, 1929">
+        <p>Mañana Impresionista, 1929</p>
+      </a>
+      <a class="my-image-links" data-gall="myGallery01" href="img/crepusculo.jpg"><img src="img/crepusculo.jpg"
+          alt="Crepúsculo, 1960">
+        <p>Crepúsculo, 1960</p>
+      </a>
+      <a class="my-image-links" data-gall="myGallery01" href="img/diadeniebla.jpg"><img src="img/diadeniebla.jpg"
+          alt="Día de niebla, 1957">
+        <p>Día de niebla, 1957</p>
+      </a>
+      <a class="my-image-links" data-gall="myGallery01" href="img/aplenosol.jpg"><img src="img/aplenosol.jpg"
+          alt="A Pleno Sol, 1944">
+        <p>A Pleno Sol, 1944</p>
+      </a>
+      <a class="my-image-links" data-gall="myGallery01" href="img/shipunderrepair.jpg"><img
+          src="img/shipunderrepair.jpg" alt="Ship under repair, 1930">
+        <p>Ship under repair, 1930</p>
+      </a>
+      <a class="my-image-links" data-gall="myGallery01" href="img/morningsunbuenosaires.jpg"><img
+          src="img/morningsunbuenosaires.jpg" alt="Morning Sun, Buenos Aires, 1930">
+        <p>Morning Sun, Buenos Aires, 1930</p>
+      </a>
+      <a class="my-image-links" data-gall="myGallery01" href="img/workingathighpressure.jpg"><img
+          src="img/workingathighpressure.jpg" alt="Working at High Pressure, 1930">
+        <p>Working at High Pressure, 1930</p>
+      </a>
+      <a class="my-image-links" data-gall="myGallery01" href="img/rincondelriachuelo.jpg"><img
+          src="img/rincondelriachuelo.jpg" alt="Rincón del Riachuelo, 1918">
+        <p>Rincón del Riachuelo, 1918</p>
+      </a>
+      <a class="my-image-links" data-gall="myGallery01" href="img/elevadoresaplenosol.jpg"><img
+          src="img/elevadoresaplenosol.jpg" alt="Elevadores A Pleno Sol, 1945">
+        <p>Elevadores A Pleno Sol, 1945</p>
+      </a>
+    </div>
     <hr>
-    <!--footer-->    
+    <!--footer-->
     <footer class="text-center py-3 bg-light">
       <address>Para contactarse con la creadora presione <a href="../../creadora.html">este link</a></address>
     </footer>
 
-<!--final-->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <!--popper-->
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-      <script src="../../js/archivo.js"></script>
-    </div>  
-  </body>
+    <!--final-->
+    <script type="text/javascript" src="../../js/venobox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+    <!--popper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+    <script src="../../js/archivo.js"></script>
+  </div>
+</body>
+
 </html>

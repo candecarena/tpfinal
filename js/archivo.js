@@ -1,19 +1,17 @@
-const fullImgBox = document.getElementById("fullImgBox"),
-//ahora accedo a la img
-fullImg = document.getElementById("fullImg");
+// libreria para la galeria 
+new VenoBox({
+    selector: '.my-image-links',
+    numeration: true,
+    infinigall: true,
+    share: true,
+    spinner: 'rotating-plane'
+});
 
-function openFullImg(reference){
-    fullImgBox.style.display = "flex";
-    fullImg.src = reference
-}
-function closeImg(){
-    fullImgBox.style.display = "none";
-}
 //popovers
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
-// para el texto al lado de la imagen
+// para el texto al lado de la imagen ESTO PUEDE QUE SE VAYA
 // Seleccionar la imagen y el texto
 const image = document.getElementById("clickableImage");
 const text = document.getElementById("text");

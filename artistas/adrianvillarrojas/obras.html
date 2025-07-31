@@ -1,138 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MdAN | Adrián Villar Rojas - Obras</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
     <!--favicon-->
     <link rel="icon" href="../../img/favicon.png" type="image/x-icon">
+    <!-- galeria venobox-->
+    <link rel="stylesheet" href="../../css/venobox.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="../../css/estilos.css">
 </head>
+
 <body>
     <div class="container-fluid">
 
-    <!--menu de navegacion-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="../../index.html">Museo Digital de Arte Nacional</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link" href="../benitoquinquelamartin/index.html">BENITO QUINQUELA MARTÍN</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="../emiliabertole/index.html">EMILIA BERTOLÉ</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="../raquelforner/index.html">RAQUEL FORNER</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../julioleparc/index.html">JULIO LE PARC</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../gachihasper/index.html">GACHI HASPER</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">ADRIÁN VILLAR ROJAS</a>
-                </li>                 
-              </ul>
-          </div>
-      </div>
-  </nav>
-  <br>
-  <!-- Encabezado -->
-<header>
-    <h5 class="centrado">De las series "Rinascimento", "The theater of disappearance" y "The most beautiful of All Mothers".</h5>
-</header>
+        <!--menu de navegacion-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html">Museo Digital de Arte Nacional</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../benitoquinquelamartin/index.html">BENITO QUINQUELA MARTÍN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../emiliabertole/index.html">EMILIA BERTOLÉ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../raquelforner/index.html">RAQUEL FORNER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../julioleparc/index.html">JULIO LE PARC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../gachihasper/index.html">GACHI HASPER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">ADRIÁN VILLAR ROJAS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <!-- Encabezado -->
+        <header>
+            <h5 class="centrado">De las series "Rinascimento", "The theater of disappearance" y "The most beautiful of
+                All Mothers".</h5>
+        </header>
 
-<!--para ampliar imagenes de la galeria-->
-<div class="full-img" id="fullImgBox">
-    <img src="../img/quinquelamartinaplenosol.jpg" id="fullImg" alt="">
-    <span onclick="closeImg()">x</span>
-</div>
-<!--galeria-->
-<div class="img-gallery">
-    <div class="text-center">
-     <img src="img/rinascimiento.jpeg" onclick="openFullImg(this.src)" class="img-fluid" alt="Rinascimiento, 2015">
-     <br>
-     <p>Rinascimento, 2015</p>
-    </div>
-    <div class="text-center">
-        <img src="img/rinascimento.png" onclick="openFullImg(this.src)" class="img-fluid" alt="Rinascimiento, 2015">
-        <br>
-        <p>Rinascimento, 2015</p>
-       </div>
-       <div class="text-center">
-        <img src="img/rinasciminto.jpeg" onclick="openFullImg(this.src)" class="img-fluid" alt="Rinascimiento, 2015">
-        <br>
-        <p>Rinascimento, 2015</p>
-       </div>
-       <div class="text-center">
-        <img src="img/themost.jpeg" onclick="openFullImg(this.src)" class="img-fluid" alt="The most beautiful of All mothers, 2015">
-        <br>
-        <p>Rinascimento, 2015</p>
-       </div>
-  
-    <div class="text-center">
-     <img src="img/thetheaterofdisappearance.webp" onclick="openFullImg(this.src)" class="img-fluid" alt="The theater of disappearance (1), 2017">
-     <br>
-     <p>The theater of disappearance (1), 2017</p>
-    </div>
-    <div class="text-center">
-        <img src="img/thetheaterdicisiete.jpeg" onclick="openFullImg(this.src)" class="img-fluid" alt="The theater of disappearance, 2017">
-        <br>
-        <p>The theater of disappearance, 2017</p>
-       </div>
-       <div class="text-center">
-        <img src="img/thetheaterofdisappearancela.jpeg" onclick="openFullImg(this.src)" class="img-fluid" alt="The theater of disappearance, 2017">
-        <br>
-        <p>The theater of disappearance, 2017</p>
-       </div>
-    <div class="text-center">
-        <img src="img/thetheaterofdisappearancefour.webp" onclick="openFullImg(this.src)" class="img-fluid" alt="The theater of disappearance (4), 2017">
-        <br>
-        <p>The theater of disappearance, 2017</p>
-    </div>
-    <div class="text-center">
-        <img src="img/themostbeautifulofallmothers.webp" onclick="openFullImg(this.src)" class="img-fluid" alt="The most beautiful of All mothers, 2015">
-        <br>
-        <p>The most beautiful of All Mothers, 2015</p>
-    </div>
-    <div class="text-center">
-        <img src="img/themostbeautifulofallmothersquince.webp" onclick="openFullImg(this.src)" class="img-fluid" alt="The most beautiful of All mothers, 2015">
-        <br>
-        <p>The most beautiful of All Mothers, 2015</p>
-    </div>
-    <div class="text-center">
-        <img src="img/themostanimals.jpg" onclick="openFullImg(this.src)" class="img-fluid" alt="The most beautiful of All mothers, 2015">
-        <br>
-        <p>The most beautiful of All Mothers, 2015</p>
-    </div>
-    <div class="text-center">
-        <img src="img/themostoso.jpg" onclick="openFullImg(this.src)" class="img-fluid" alt="The most beautiful of All mothers, 2015">
-        <br>
-        <p>The most beautiful of All Mothers, 2015</p>
-    </div>
-</div>
-    <hr>
-    <!--footer-->    
-    <footer class="text-center py-3 bg-light">
-        <address>Para contactarse con la creadora presione <a href="../../creadora.html">este link</a></address>
-    </footer>
+        <!--galeria-->
+        <div class="img-gallery">
+            <a class="my-image-links" data-gall="myGallery01" href="img/rinascimiento.jpeg"><img
+                    src="img/rinascimiento.jpeg" alt="Rinascimento, 2015">
+                <p>Rinascimento, 2015</p>
+            </a>
+            <a class="my-image-links" data-gall="myGallery01" href="img/rinascimento.png"><img
+                    src="img/rinascimento.png" alt="Rinascimento, 2015">
+                <p>Rinascimento, 2015</p>
+            </a>
+            <a class="my-image-links" data-gall="myGallery01" href="img/rinasciminto.jpeg"><img
+                    src="img/rinasciminto.jpeg" alt="Rinascimento, 2015">
+                <p>Rinascimento, 2015</p>
+            </a>
+            <a class="my-image-links" data-gall="myGallery01" href="img/themost.jpeg"><img src="img/themost.jpeg"
+                    alt="The most beautiful of All mothers, 2015">
+                <p>The most beautiful of All mothers, 2015</p>
+            </a>
+            <a class="my-image-links" data-gall="myGallery01" href="img/thetheaterofdisappearance.webp"><img
+                    src="img/thetheaterofdisappearance.webp" alt="The theater of disappearance (1), 2017">
+                <p>The theater of disappearance (1), 2017</p>
+            </a>
+            <a class="my-image-links" data-gall="myGallery01" href="img/thetheaterdicisiete.jpeg"><img
+                    src="img/thetheaterdicisiete.jpeg" alt="The theater of disappearance, 2017">
+                <p>The theater of disappearance, 2017</p>
+            </a>
+            <a class="my-image-links" data-gall="myGallery01" href="img/thetheaterofdisappearancela.jpeg"><img
+                    src="img/thetheaterofdisappearancela.jpeg" alt="The theater of disappearance, 2017">
+                <p>The theater of disappearance, 2017</p>
+            </a>
+            <a class="my-image-links" data-gall="myGallery01" href="img/thetheaterofdisappearancefour.webp"><img
+                    src="img/thetheaterofdisappearancefour.webp" alt="The theater of disappearance, 2017">
+                <p>The theater of disappearance, 2017</p>
+            </a>
+            <a class="my-image-links" data-gall="myGallery01" href="img/themostbeautifulofallmothers.webp"><img
+                    src="img/themostbeautifulofallmothers.webp" alt="The most beautiful of All Mothers, 2015">
+                <p>The most beautiful of All Mothers, 2015</p>
+            </a>
+            <a class="my-image-links" data-gall="myGallery01" href="img/themostbeautifulofallmothersquince.webp"><img
+                    src="img/themostbeautifulofallmothersquince.webp" alt="The most beautiful of All Mothers, 2015">
+                <p>The most beautiful of All Mothers, 2015</p>
+            </a>
+            <a class="my-image-links" data-gall="myGallery01" href="img/themostanimals.jpg"><img
+                    src="img/themostanimals.jpg" alt="The most beautiful of All Mothers, 2015">
+                <p>The most beautiful of All Mothers, 2015</p>
+            </a>
+            <a class="my-image-links" data-gall="myGallery01" href="img/themostoso.jpg"><img src="img/themostoso.jpg"
+                    alt="The most beautiful of All Mothers, 2015">
+                <p>The most beautiful of All Mothers, 2015</p>
+            </a>
+        </div>
 
-<!--final-->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <!--popper-->
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-      <script src="../../js/archivo.js"></script>
-    </div>  
-  </body>
+        <hr>
+        <!--footer-->
+        <footer class="text-center py-3 bg-light">
+            <address>Para contactarse con la creadora presione <a href="../../creadora.html">este link</a></address>
+        </footer>
+
+        <!--final-->
+        <script type="text/javascript" src="../../js/venobox.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <!--popper-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+        <script src="../../js/archivo.js"></script>
+    </div>
+</body>
+
 </html>
