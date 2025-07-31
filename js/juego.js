@@ -1,11 +1,11 @@
-// Temporizador
-let countdown; // declaro la variable fuera de la función para un alcance global
+// declaro temporizador. la variable fuera de la función para un alcance global
+let countdown;
 
 // config del temporizador
 document.getElementById("inicioJuego").addEventListener("click", function () {
     document.getElementById("timer").style.display = "block";
 
-    let timeLeft = 60; // Tiempo en segundos
+    let timeLeft = 60; // tiempo en segundos
     countdown = setInterval(function () {
         document.getElementById("timeLeft").innerText = timeLeft;
         timeLeft--;
@@ -19,11 +19,11 @@ document.getElementById("inicioJuego").addEventListener("click", function () {
 });
 
 // Detener el temporizador al enviar respuestas
-document.getElementById("enviar").addEventListener("click", function(event) {
+document.getElementById("enviar").addEventListener("click", function (event) {
     clearInterval(countdown); // acá detiene
 });
 
-// Confeti
+// funcion que lanza confeti
 function lanzarConfeti() {
     confetti({
         particleCount: 150,
@@ -32,6 +32,7 @@ function lanzarConfeti() {
     });
 }
 
+// array de juagdores
 let jugadores = [
     { nombre: 'Jugador', puntaje: 0 }
 ];
@@ -67,7 +68,7 @@ function guardarPuntajes() {
 };
 
 // Función que se ejecuta cuando se hace clic en "enviar"
-document.getElementById("enviar").addEventListener("click", function(event) {
+document.getElementById("enviar").addEventListener("click", function (event) {
     event.preventDefault();
 
     let resultado = '';
@@ -90,12 +91,12 @@ document.getElementById("enviar").addEventListener("click", function(event) {
         }
     }
 
-    // Mostrar resultados
+    // si todas las respuestas son correctas:
     if (correctas === totalPreguntas) {
         resultado += `<br>¡Felicidades! Se nota que te gusta el arte de en nuestro país.`;
-        lanzarConfeti(); // Lanza el confeti solo si todas las respuestas son correctas
+        lanzarConfeti(); // Lanza el confeti 
         actualizarPuntaje('Jugador'); // Suma puntos al jugador
     };
-    document.getElementById('resultado').innerHTML = resultado; 
+    document.getElementById('resultado').innerHTML = resultado;
 });
 
