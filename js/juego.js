@@ -91,7 +91,7 @@ function verificarRespuestas() {
     }
 
     if (correctas === totalPreguntas) {
-        resultado += `<br>¡Felicidades! Se nota que te gusta el arte de en nuestro país.`;
+        resultado += `<br>¡Felicidades! Se nota que te gusta el arte de nuestro país.`;
         lanzarConfeti();
         actualizarPuntaje('Jugador');
     }
