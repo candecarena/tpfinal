@@ -18,9 +18,11 @@ document.getElementById("inicioJuego").addEventListener("click", function () {
     }, 1000);
 });
 
-// Detener el temporizador al enviar respuestas
+// Detener el temporizador y verificar respuestas al enviar
 document.getElementById("enviar").addEventListener("click", function (event) {
-    clearInterval(countdown); // acá detiene
+    event.preventDefault();    // evitar que el formulario recargue la página
+    clearInterval(countdown);  // detiene el temporizador
+    verificarRespuestas();     // llama a la función que evalúa respuestas
 });
 
 // funcion que lanza confeti
@@ -32,7 +34,7 @@ function lanzarConfeti() {
     });
 }
 
-// array de juagdores
+// array de jugadores
 let jugadores = [
     { nombre: 'Jugador', puntaje: 0 }
 ];
@@ -58,24 +60,21 @@ document.getElementById("inicioJuego").addEventListener("click", function () {
 function actualizarPuntaje(ganador) {
     if (ganador === 'Jugador') {
         jugadores[0].puntaje += 10;  // suma 10 puntos al jugador
-    };
+    }
     guardarPuntajes();
 }
 
 // Función para guardar los puntajes en localStorage
 function guardarPuntajes() {
     localStorage.setItem('puntajes', JSON.stringify(jugadores));
-};
+}
 
-// Función que se ejecuta cuando se hace clic en "enviar"
-document.getElementById("enviar").addEventListener("click", function (event) {
-    event.preventDefault();
-
+// Función global para verificar respuestas
+function verificarRespuestas() {
     let resultado = '';
     let correctas = 0;
     let totalPreguntas = Object.keys(respuestasCorrectas).length;
 
-    // Obtener respuestas seleccionadas
     for (let i = 1; i <= totalPreguntas; i++) {
         const seleccionada = document.querySelector(`input[name="pregunta${i}"]:checked`);
         if (seleccionada) {
@@ -91,12 +90,10 @@ document.getElementById("enviar").addEventListener("click", function (event) {
         }
     }
 
-    // si todas las respuestas son correctas:
     if (correctas === totalPreguntas) {
         resultado += `<br>¡Felicidades! Se nota que te gusta el arte de en nuestro país.`;
-        lanzarConfeti(); // Lanza el confeti 
-        actualizarPuntaje('Jugador'); // Suma puntos al jugador
-    };
+        lanzarConfeti();
+        actualizarPuntaje('Jugador');
+    }
     document.getElementById('resultado').innerHTML = resultado;
-});
-
+}
